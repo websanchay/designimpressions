@@ -1,0 +1,2562 @@
+    html,
+    body {
+        font-family: "Serif", sans-serif;
+        color: #444444;
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        overflow-x: hidden;
+    }
+    
+    a {
+        text-decoration: none;
+        color: #ba953a;
+    }
+    
+    a:hover {
+        color: #ba953a;
+        text-decoration: none;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Raleway", sans-serif;
+    }
+    .logo{
+        width: 100%;
+        height: 160px;
+    }
+    .middle {
+        transition: .5s ease;
+        opacity: 1;
+        position: absolute;
+        top: 88%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .img_c{
+        width:100%;
+        height: auto;
+    }
+
+   .img_c:hover{
+       opacity: 0.3;
+   }
+
+   .middle:hover{
+       opacity: 1;
+   }
+   .text {
+    background-color: #a07303;
+    color: white;
+    font-size: 14px;
+    padding: 12px 38px;
+    font-weight: 700;
+  }
+
+
+    /*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+    /* #topbar {
+    background: #fbfbfb;
+    font-size: 15px;
+    height: 40px;
+    padding: 0;
+}
+
+#topbar .contact-info a {
+    line-height: 0;
+    color: #444444;
+    transition: 0.3s;
+}
+
+#topbar .contact-info a:hover {
+    color: #14db48;
+}
+
+#topbar .contact-info i {
+    color: #14db48;
+    line-height: 0;
+    margin-right: 5px;
+}
+
+#topbar .contact-info .phone-icon {
+    margin-left: 15px;
+}
+
+#topbar .social-links a {
+    color: #6f6f6f;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+    transition: 0.3s;
+}
+
+#topbar .social-links a:hover {
+    color: #14db48;
+} */
+    /*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+    
+    #header {
+        background: #fff;
+        transition: all 0.5s;
+        z-index: 997;
+        height: 106px;
+        padding-top: 90px;
+    }
+    
+    #header.header-scrolled {
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+        width: 400px;
+        height: 92px;
+        margin-left: -15px;
+        margin-top: -42px;
+        overflow-x: hidden;
+    }
+    
+    /* #header .logo {
+        font-size: 30px;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    } */
+    
+    /* #header .logo a {
+        color: #ba953a;
+    } */
+    
+    /* .logo img {
+        max-height: 86px;
+        width:491px; */
+        /* max-width: 218rem; */
+        /* margin-top: 20px;
+        margin-left: -84px;
+
+    } */
+    /* .scrolled-offset {
+    margin-top: 166px;
+} */
+    
+    .scroll {
+        min-height: 100%;
+        overflow: scroll;
+    }
+    @media screen and (max-width:1200px) and (min-width:1068px) {
+    .logo{
+        width:277px;
+        height:60px;
+        margin-top:-45px;
+        margin-left: -55px;
+        }
+    }
+
+    @media screen and (max-width:1068px) and (min-width:992px){
+        .logo{
+            width:235px;
+            height:62px;
+        }
+    }
+
+    @media screen and (max-width:992px) and (min-width:768px){
+        .logo {
+            width: 436 px;
+            height: 71px;
+            margin-left: -15px;
+            margin-top: -42px;
+        }
+
+        .mobile-nav-toggle{
+            margin-left:169px;
+        }
+    }
+    
+    @media screen and (max-width:768px) and (min-width:576px){
+        .logo{
+            width:350px;
+            height:65px;
+            margin-left:-13px;
+        }
+        .mobile-nav-toggle{
+            margin-left:100px;
+        }
+
+    }
+
+    @media screen and (max-width:576px) and (min-width:420px){
+        .logo{
+            width:316px;
+            height:65px;
+        }
+
+        .mobile-nav-toggle{
+            margin-left:87px;
+        }
+    }
+
+    @media screen and (max-width:420px) and (min-width:376px){
+        .logo{
+            width:284px;
+            height:65px;
+        }
+
+        .mobile-nav-toggle{
+            margin-left:65px;
+        }
+
+    }
+
+    @media screen and (max-width:376px) and (min-width:320px){
+        .logo{
+            width:196px;
+            height:65px;
+            margin-left:0px;
+        }
+
+        .mobile-nav-toggle{
+            margin-left:52px;
+        }
+
+    }
+    
+    /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+    /**
+* Desktop Navigation 
+*/
+    
+    .navbar {
+        padding: 0;
+        padding-top: 0;
+        padding-right: 70px;
+        margin-top: -19px;
+        font-weight: 400;
+    }
+    
+    .navbar ul {
+        margin:0;
+        padding: 0;
+        display: flex;
+        list-style: none;
+        align-items: center;
+
+    }
+    
+    .navbar li {
+        position: relative;
+    }
+    .navbar li b{
+        font-weight: 700;
+        font-size: initial;
+
+    }
+    
+    .navbar a,
+    .navbar a:focus {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 0 10px 30px;
+        font-size: 15px;
+        color: #222222;
+        white-space: nowrap;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+    
+    .navbar a i,
+    .navbar a:focus i {
+        font-size: 12px;
+        line-height: 0;
+        margin-left: 5px;
+    }
+    
+    .navbar a:hover,
+    .navbar .active,
+    .navbar .active:focus,
+    .navbar li:hover>a {
+        color: #ba953a;
+    }
+    
+    .navbar .getstarted {
+        color: #ba953a;
+        padding: 8px 25px;
+        margin-left: 30px;
+        border-radius: 4px;
+        border: 2px solid #ba953a;
+        transition: 0.3s;
+        font-size: 14px;
+    }
+    
+    .navbar .getstarted:hover {
+        background: #ba953a;
+        color: #fff;
+    }
+    
+    .navbar .dropdown ul {
+        display: block;
+        position: absolute;
+        left: 14px;
+        top: calc(100% + 30px);
+        margin: 0;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 0;
+        visibility: hidden;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+        transition: 0.3s;
+    }
+    
+    .navbar .dropdown ul li {
+        min-width: 200px;
+    }
+    
+    .navbar .dropdown ul a {
+        padding: 10px 20px;
+        text-transform: none;
+    }
+    
+    .navbar .dropdown ul a i {
+        font-size: 12px;
+    }
+    
+    .navbar .dropdown ul a:hover,
+    .navbar .dropdown ul .active:hover,
+    .navbar .dropdown ul li:hover>a {
+        color: #ba953a;
+    }
+    
+    .navbar .dropdown:hover>ul {
+        opacity: 1;
+        top: 100%;
+        visibility: visible;
+    }
+    
+    .navbar .dropdown .dropdown ul {
+        top: 0;
+        left: calc(100% - 30px);
+        visibility: hidden;
+    }
+    
+    .navbar .dropdown .dropdown:hover>ul {
+        opacity: 1;
+        top: 0;
+        left: 100%;
+        visibility: visible;
+    }
+    
+    .fixed-top {
+        position: absolute;
+    }
+    .footer_1{
+        background: white;
+        border-top: 2px solid #ba953a;
+        margin-top: 30px;
+    }
+    
+    @media (max-width: 1366px) {
+        .navbar .dropdown .dropdown ul {
+            left: -90%;
+        }
+        .navbar .dropdown .dropdown:hover>ul {
+            left: -100%;
+        }
+    }
+    /**
+* Mobile Navigation 
+*/
+    
+    .mobile-nav-toggle {
+        color: #222222;
+        font-size: 28px;
+        cursor: pointer;
+        display: none;
+        line-height: 0;
+        transition: 0.5s;
+    }
+    
+    .mobile-nav-toggle.bi-x {
+        color: #fff;
+    }
+    
+    @media (max-width: 991px) {
+        .mobile-nav-toggle {
+            display: block;
+        }
+        .navbar ul {
+            display: none;
+        }
+    }
+    
+    .navbar-mobile {
+        position: fixed;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        background: rgba(9, 9, 9, 0.9);
+        transition: 0.3s;
+        z-index: 999;
+    }
+    
+    .navbar-mobile .mobile-nav-toggle {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+    
+    .navbar-mobile ul {
+        display: block;
+        position: absolute;
+        top: 55px;
+        right: 15px;
+        bottom: 15px;
+        left: 15px;
+        padding: 10px 0;
+        background-color: #fff;
+        overflow-y: auto;
+        transition: 0.3s;
+    }
+    
+    .navbar-mobile a {
+        padding: 10px 20px;
+        font-size: 15px;
+        color: #222222;
+    }
+    
+    .navbar-mobile a:hover,
+    .navbar-mobile .active,
+    .navbar-mobile li:hover>a {
+        color: #ba953a;
+    }
+    
+    .navbar-mobile .getstarted {
+        margin: 15px;
+    }
+    
+    .navbar-mobile .dropdown ul {
+        position: static;
+        display: none;
+        margin: 10px 20px;
+        padding: 10px 0;
+        z-index: 99;
+        opacity: 1;
+        visibility: visible;
+        background: #fff;
+        box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    }
+    
+    .navbar-mobile .dropdown ul li {
+        min-width: 200px;
+    }
+    
+    .navbar-mobile .dropdown ul a {
+        padding: 10px 20px;
+    }
+    
+    .navbar-mobile .dropdown ul a i {
+        font-size: 12px;
+    }
+    
+    .navbar-mobile .dropdown ul a:hover,
+    .navbar-mobile .dropdown ul .active:hover,
+    .navbar-mobile .dropdown ul li:hover>a {
+        color: #ba953a;
+    }
+    
+    .navbar-mobile .dropdown>.dropdown-active {
+        display: block;
+    }
+    
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+        .navbar a,
+        .navbar a:focus {
+            font-size: 13px;
+        }
+    }
+     
+
+    /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+    
+    .back-to-top {
+        position: fixed;
+        visibility: hidden;
+        opacity: 0;
+        right: 15px;
+        bottom: 15px;
+        z-index: 996;
+        background: #f9e989;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        transition: all 0.4s;
+    }
+    
+    .back-to-top i {
+        font-size: 24px;
+        color: #fff;
+        line-height: 0;
+    }
+    
+    .back-to-top:hover {
+        background: #ba953a;
+        color: #fff;
+    }
+    
+    .back-to-top.active {
+        visibility: visible;
+        opacity: 1;
+    }
+    /*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+    
+    #hero {
+        width: 100%;
+        height: 85vh;
+        /* background-color: rgba(9, 9, 9, 0.8); */
+        overflow: hidden;
+        position: relative;
+        top: 15px;
+    }
+    
+    #heroCarousel {
+        margin-top: 153px;
+    }
+    
+    #hero .carousel,
+    #hero .carousel-inner,
+    #hero .carousel-item,
+    #hero .carousel-item::before {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+    }
+    
+    #hero .carousel-item::before {
+        content: '';
+    }
+    
+    #hero .carousel-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 50px;
+        right: 50px;
+    }
+    
+    #hero .container {
+        text-align: center;
+    }
+    
+    #hero h2 {
+        color: #fff;
+        margin-bottom: 20px;
+        font-size: 48px;
+        font-weight: 700;
+    }
+    
+    #hero p {
+        -webkit-animation-delay: 0.4s;
+        animation-delay: 0.4s;
+        margin: 0 auto 30px auto;
+        color: #fff;
+    }
+    
+    #hero .carousel-inner .carousel-item {
+        transition-property: opacity;
+        background-position: center top;
+    }
+    
+    #hero .carousel-inner .carousel-item,
+    #hero .carousel-inner .active.carousel-item-start,
+    #hero .carousel-inner .active.carousel-item-end {
+        opacity: 0;
+    }
+    
+    #hero .carousel-inner .active,
+    #hero .carousel-inner .carousel-item-next.carousel-item-start,
+    #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+        opacity: 1;
+        transition: 0.5s;
+    }
+    
+    #hero .carousel-control-next-icon,
+    #hero .carousel-control-prev-icon {
+        background: none;
+        font-size: 30px;
+        line-height: 0;
+        width: auto;
+        height: auto;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 50px;
+        transition: 0.3s;
+        color: rgba(255, 255, 255, 0.5);
+        width: 54px;
+        height: 54px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #hero .carousel-control-next-icon:hover,
+    #hero .carousel-control-prev-icon:hover {
+        background: #ffc107;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    
+    #hero .carousel-indicators li {
+        cursor: pointer;
+        background: #fff;
+        overflow: hidden;
+        border: 0;
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        opacity: .6;
+        transition: 0.3s;
+    }
+    
+    #hero .carousel-indicators li.active {
+        opacity: 1;
+        background: #ba953a;
+    }
+    
+    .carousel-inner img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #hero .btn-get-started {
+        font-family: "Raleway", sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 4px;
+        transition: 0.5s;
+        line-height: 1;
+        color: #fff;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        background: #14db48;
+    }
+    
+    .floor {
+        text-align: center;
+    }
+    
+    #hero .btn-get-started:hover {
+        background: #6ec083;
+    }
+    
+    @media (max-width: 992px) {
+        #hero {
+            height: 100vh;
+        }
+        #hero .carousel-container {
+            top: 66px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        #hero h2 {
+            font-size: 28px;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        #hero .carousel-control-prev,
+        #hero .carousel-control-next {
+            width: 5%;
+        }
+    }
+    
+    @media (max-height: 500px) {
+        #hero {
+            height: 130vh;
+        }
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+    /* Clearfix (clear floats) */
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    /*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+    
+    .about {
+        padding: 50px 0;
+    }
+    
+    .section-bg {
+        background-color: #f8fcf9;
+    }
+    
+    .section-title {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+    
+    .section-title h5 {
+        font-size: 14px;
+        color: grey;
+        margin-top: -12px;
+    }
+    
+    .section-title h2 {
+        font-size: 32px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
+    
+    .section-title h2::before {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 120px;
+        height: 1px;
+        /* background: #ddd; */
+        bottom: 1px;
+        left: calc(50% - 60px);
+    }
+    
+    .section-title h2::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 40px;
+        height: 5px;
+        background:#ba953a;
+        bottom: 15px;
+        left: calc(50% - 20px);
+    }
+    
+    .section-title p {
+        margin-bottom: 0;
+        font-size: 14px;
+        color: #919191;
+    }
+    
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+        .content {
+            margin-top: 18px;
+        }
+    }
+    /* ----------------------------------------------------------- 
+# services Section
+-------------------------------------------------------------*/
+    
+    .services {
+        text-align: center;
+        font-weight: bold;
+    }
+    /*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+    
+    .about .content h3 {
+        font-weight: 700;
+        font-size: 28px;
+    }
+    
+    .about .content ul {
+        list-style: none;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .about .content ul li {
+        padding-bottom: 10px;
+        text-align:justify;
+    }
+    
+    .about .content ul i {
+        font-size: 20px;
+        padding-right: 4px;
+        color: #a07303;
+    }
+    
+    .about .content p:last-child {
+        margin-bottom: 0;
+    }
+    
+    .about .content p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    /*--------------------------------------------------------------
+# Gallery
+--------------------------------------------------------------*/
+    
+    .gallery {
+        padding-bottom: 30px;
+    }
+    
+    .gallery .gallery-item {
+        overflow: hidden;
+        border-right: 3px solid #fff;
+        border-bottom: 3px solid #fff;
+    }
+    
+    .gallery .gallery-item img {
+        transition: all ease-in-out 0.4s;
+    }
+    
+    .gallery .gallery-item:hover img {
+        transform: scale(1.2);
+    }
+    
+    .img-fluid {
+        border: solid 2px #a07303;
+        
+    }
+    
+    .gallery-int {
+        position: relative;
+        left: 196px;
+        top: 8px;
+    }
+    /* .exteriors_1 {
+    padding-left: 169px;
+}
+
+.exteriors_2 {
+    padding-right: 8px;
+} */
+    
+    .ext_1 {
+        border: 3px solid #a07303 ;
+        width: 200px;
+        height: 130px;
+        position: relative;
+        left: 18px;
+    }
+    
+    .pergolas {
+        margin-left: 32px;
+        height: 75px;
+        margin-top: 19px;
+    }
+    
+    .p {
+        margin-left: 5px;
+        color:#a07303;
+        font-family: monospace;
+    }
+    
+    .ext_2 {
+        border: 3px solid #a07303;
+        position: relative;
+        width: 192px;
+        height: 130px;
+        left: 49px;
+    }
+    
+    .cladding {
+        margin-left: 29px;
+        margin-top: 20px;
+    }
+    
+    .d {
+        margin-left: 1px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    .ext_3 {
+        border: 3px solid #a07303;
+        position: relative;
+        left: 81px;
+        width: 192px;
+        height: 130px;
+    }
+    
+    .garden {
+        margin-left: 27px;
+        height: 75px;
+        margin-top: 24px;
+    }
+    
+    .t {
+        margin-left: 20px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    .ext_4 {
+        border: 3px solid #a07303;
+        position: relative;
+        width: 192px;
+        height: 130px;
+        left: 116px;
+    }
+    
+    .outdoor {
+        margin-left: 29px;
+        height: 75px;
+        margin-top: 18px;
+    }
+    
+    .o {
+        margin-left: 22px;
+        position: relative;
+        bottom: -4px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    .ext_5 {
+        border: 3px solid #a07303;
+        position: relative;
+        left: 150px;
+        width: 192px;
+        height: 130px;
+    }
+    
+    .fireplace {
+        margin-left: 28px;
+        height: 75px;
+        margin-top: 22px;
+    }
+    
+    .f {
+        margin-left: 45px;
+        color:#a07303;
+        font-family: monospace;
+    }
+    
+    .ext_6 {
+        border: 3px solid #a07303;
+        position: relative;
+        width: 200px;
+        left: 114px;
+        height:137px;
+    }
+    
+    .vertical {
+        margin-left: 30px;
+        height: 75px;
+        margin-top: 23px;
+    }
+    
+    .v {
+        margin-left: 18px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    .ext_7 {
+        border: 3px solid #a07303;
+        position: relative;
+        width: 200px;
+        left: 157px;
+        height:137px;
+    }
+    
+    .water {
+        margin-left: 28px;
+        height:75px;
+        margin-top: 22px;
+    }
+    
+    .w {
+        margin-left: 28px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    .ext_8 {
+        border: 3px solid #a07303;
+        position: relative;
+        width: 200px;
+        left: 197px;
+        height: 137px;
+    }
+    
+    .bar {
+        margin-left: 43px;
+        width: 90px;
+        height:75px;
+        margin-top: 17px;
+    }
+    
+    .b {
+        position: relative;
+        top: 7px;
+        left: 44px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    .ext_9 {
+        border: 3px solid #a07303;
+        position: relative;
+        width: 200px;
+        left: 232px;
+        height:137px;
+    }
+    
+    .exteriors {
+        margin-left: 31px;
+        height:75px;
+        margin-top: 24px;
+    }
+    
+    .e {
+        margin-left: 14px;
+        color: #a07303;
+        font-family: monospace;
+    }
+    
+    @media screen and (max-width: 1200px) and (min-width: 992px) {
+        html,
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+        .ext_1 {
+            width: 178px;
+            position: relative;
+            left: -19px;
+        }
+        .pergolas {
+            margin-left: 22px;
+        }
+        .ext_2 {
+            position: relative;
+            width: 178px;
+            left: -6px;
+        }
+        .cladding {
+            margin-left: 20px;
+        }
+        .ext_3 {
+            position: relative;
+            left: 11px;
+            width: 178px;
+        }
+        .garden {
+            margin-left: 14px;
+        }
+        .t {
+            margin-left: 10px;
+        }
+        .ext_4 {
+            position: relative;
+            width: 178px;
+            left: 25px;
+        }
+        .ext_5 {
+            position: relative;
+            left: 42px;
+            width: 178px;
+        }
+        .ext_6 {
+            left: 20px;
+        }
+        .vertical {
+            margin-left: 37px;
+        }
+        .ext_7 {
+            left: 38px;
+        }
+        .ext_8 {
+            left: 56px;
+            height: 136px;
+        }
+        .ext_9 {
+            left: 70px;
+        }
+        .p {
+            margin-left: -13px;
+        }
+        .d {
+            margin-left: -12px;
+        }
+        .e {
+            margin-left: 17px;
+        }
+        .gallery-int {
+            left: 207px;
+        }
+    }
+    
+    @media screen and (max-width: 992px) and (min-width: 768px) {
+        .text {
+            background-color: #a07303;
+            color: white;
+            font-size: 9px;
+            padding: 0px 13px;
+            font-weight: 700;
+        }
+        .ext_1 {
+            width: 130px;
+            height: 105px;
+            left: -19px;
+        }
+        .pergolas {
+            margin-left: 13px;
+            width: 65px;
+            margin-top: 5px;
+        }
+        .p {
+            margin-left: -16px;
+            font-size: 10px;
+           
+        }
+        .ext_2 {
+            width: 130px;
+            height: 105px;
+            left: -1px;
+        }
+        .cladding {
+            margin-left: 10px;
+            width: 70px;
+        }
+        .d {
+            margin-left: -5px;
+            font-size: 9px;
+        
+        }
+        .ext_3 {
+            left: 17px;
+            width: 130px;
+            height: 105px;
+        }
+        .garden {
+            margin-left: 9px;
+            width: 65px;
+            margin-top: 2px;
+        }
+        .t {
+            margin-left: -4px;
+            font-size: 12px;
+        
+        }
+        .ext_4 {
+            width: 130px;
+            height: 105px;
+            left: 38px;
+        }
+        .outdoor {
+            margin-left: 16px;
+            margin-top: 4px;
+            width: 63px;
+            height: 63px;
+        }
+        .o {
+            margin-left: 1px;
+            position: relative;
+            bottom: -3px;
+            font-size: 11px;
+        
+        }
+        .ext_5 {
+            left: 52px;
+            width: 130px;
+            height: 105px;
+        }
+        .fireplace {
+            margin-left: 14px;
+            width: 65px;
+            margin-top: 3px;
+        }
+        .f {
+            margin-left: 21px;
+            font-size: 11px;
+            
+        }
+        .ext_6 {
+            width: 130px;
+            left: 41px;
+            height: 116px;
+        }
+        .vertical {
+            margin-left: -7px;
+            height: 70px;
+            margin-top: 9px;
+        }
+        .v {
+            margin-left: -5px;
+            font-size: 11px;
+    
+        }
+        .ext_7 {
+            width: 130px;
+            left: 59px;
+            height: 115px;
+        }
+        .water {
+            margin-left: 10px;
+            width: 70px;
+            margin-top: 9px;
+        }
+        .w {
+            margin-left: 9px;
+            font-size: 11px;
+        
+        }
+        .ext_8 {
+            width: 130px;
+            left: 78px;
+            height: 115px;
+        }
+        .bar {
+            margin-left: 14px;
+            width: 70px;
+            margin-top: 7px;
+            height: 70px;
+        }
+        .b {
+            position: relative;
+            top: 5px;
+            left: 16px;
+            font-size: 11px;
+
+        }
+        .ext_9 {
+            width: 130px;
+            left: 98px;
+            height: 113px;
+        }
+        .exteriors {
+            margin-left: 11px;
+            width: 70px;
+            margin-top: 6px;
+        }
+        .e {
+            margin-left: -11px;
+            font-size: 10px;
+        }
+        .gallery-int {
+            left: 125px;
+        }
+    }
+    
+    @media screen and (max-width: 768px) and (min-width: 576px) {
+        .text {
+            background-color: #a07303;
+            color: white;
+            font-size: 14px;
+            padding: 12px 38px;
+            font-weight: 700;
+          }
+        .ext_1 {
+            width: 171px;
+            height: 109px;
+            left: -8px;
+            top: 98px;
+        }
+        .pergolas {
+            margin-left: 28px;
+            width: 70px;
+            margin-top: 4px;
+        }
+        .p {
+            margin-left: 1px;
+            font-size: 12px;
+        }
+        .ext_2 {
+            width: 171px;
+            height: 109px;
+            left: 5px;
+            top: 97px;
+        }
+        .cladding {
+            margin-left: 31px;
+            width: 70px;
+            height: 70px;
+            margin-top: 5px;
+        }
+        .d {
+            margin-left: 2px;
+            font-size: 12px;
+        }
+        .ext_3 {
+            left: 359px;
+            width: 171px;
+            height: 109px;
+            top: -11px;
+        }
+        .garden {
+            margin-left: 29px;
+            width: 70px;
+            height: 70px;
+            margin-top: 2px;
+        }
+        .t {
+            margin-left: 14px;
+            font-size: 12px;
+        }
+        .ext_4 {
+            width: 171px;
+            height: 109px;
+            left: -180px;
+            top: 130px;
+        }
+        .outdoor {
+            margin-left: 27px;
+            height: 70px;
+            margin-top: 3px;
+            width: 70px;
+        }
+        .o {
+            margin-left: 14px;
+            position: relative;
+            bottom: -4px;
+            font-size: 12px;
+        }
+        .ext_5 {
+            left: 176px;
+            width: 171px;
+            height: 109px;
+            top: 22px;
+        }
+        .fireplace {
+            margin-left: 27px;
+            width: 70px;
+            height: 70px;
+            margin-top: 9px;
+        }
+        .f {
+            margin-left: 32px;
+            font-size: 12px;
+        }
+        .ext_6 {
+            left: 360px;
+            width: 171px;
+            height: 109px;
+            top: -127px;
+        }
+        .vertical {
+            margin-left: 41px;
+            height: 70px;
+            margin-top: 9px;
+            width: 70px;
+        }
+        .v {
+            margin-left: 24px;
+            font-size: 12px;
+        }
+        .ext_7 {
+            width: 171px;
+            left: -181px;
+            height: 109px;
+            top: 10px;
+        }
+        .water {
+            margin-left: 23px;
+            width: 70px;
+            height: 70px;
+            margin-top: 4px;
+        }
+        .w {
+            margin-left: 12px;
+        }
+        .ext_8 {
+            width: 171px;
+            left: 176px;
+            height: 109px;
+            bottom: 99px;
+        }
+        .bar {
+            margin-left: 32px;
+            width: 70px;
+            height: 65px;
+            margin-top: 7px;
+        }
+        .b {
+            position: relative;
+            top: 5px;
+            left: 30px;
+            font-size: 12px;
+        }
+        .ext_9 {
+            width: 171px;
+            left: 191px;
+            height: 109px;
+            bottom: 99px;
+        }
+        .exteriors {
+            margin-left: 39px;
+            width: 70px;
+            height: 70px;
+            margin-top: 6px;
+        }
+        .e {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .footer_2 {
+            margin-top: -28px;
+        }
+        .gallery-int {
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+        .backyard {
+            position: absolute;
+            width: 95%;
+            top: 7px;
+        }
+        .features_section {
+            margin-top: 208px;
+        }
+        .footer_1{
+            margin-top: -63px;
+        }
+        
+    }
+    
+    @media screen and (max-width: 575px) and (min-width: 475px) {
+        .ext_1 {
+            width: 142px;
+            height: 100px;
+            left: -1px;
+        }
+        .pergolas {
+            margin-left: 19px;
+            width: 61px;
+            margin-top: 4px;
+            height:65px;
+        }
+        .p {
+            margin-left: -15px;
+            font-size: 11px;
+        }
+        .ext_2 {
+            width: 142px;
+            height: 100px;
+            left: 10px;
+            top: -1px;
+        }
+        .cladding {
+            margin-left: 20px;
+            width: 55px;
+            height: 57px;
+            margin-top: 8px;
+        }
+        .d {
+            margin-left: -15px;
+            font-size: 11px;
+        }
+        .ext_3 {
+            left: 22px;
+            width: 142px;
+            height: 100px;
+            top: -1px;
+        }
+        .garden {
+            margin-left: 12px;
+            width: 75px;
+            height: 62px;
+            margin-top: 3px;
+        }
+        .t {
+            margin-left: 4px;
+            font-size: 11px;
+        }
+        .ext_4 {
+            width: 142px;
+            height: 100px;
+            left: -1px;
+            top: 20px;
+        }
+        .outdoor {
+            margin-left: 21px;
+            height: 58px;
+            margin-top: 7px;
+            width: 60px;
+        }
+        .o {
+            margin-left: 9px;
+            position: relative;
+            bottom: -4px;
+            font-size: 11px;
+        }
+        .ext_5 {
+            left: 10px;
+            width: 142px;
+            height: 100px;
+            top: 19px;
+        }
+        .fireplace {
+            margin-left: 18px;
+            width: 60px;
+            height: 60px;
+            margin-top: 9px;
+        }
+        .f {
+            margin-left: 16px;
+            font-size: 11px;
+        }
+        .ext_6 {
+            left: 305px;
+            width: 142px;
+            height: 100px;
+            top: -121px;
+        }
+        .vertical {
+            margin-left: 22px;
+            height: 55px;
+            margin-top: 13px;
+            width: 57px;
+        }
+        .v {
+            margin-left: 1px;
+            font-size: 11px;
+        }
+        .ext_7 {
+            width: 142px;
+            left: -143px;
+            height: 100px;
+            top: 8px;
+        }
+        .water {
+            margin-left: 12px;
+            width: 60px;
+            height: 58px;
+            margin-top: 9px;
+        }
+        .w {
+            margin-left: 1px;
+            font-size: 11px;
+        }
+        .ext_8 {
+            width: 142px;
+            left: -131px;
+            height: 100px;
+            bottom: -8px;
+        }
+        .bar {
+            margin-left: 26px;
+            width: 54px;
+            height: 44px;
+            margin-top: 18px;
+        }
+        .b {
+            position: relative;
+            top: 5px;
+            left: 12px;
+            font-size: 11px;
+        }
+        .ext_9 {
+            width: 142px;
+            left: 309px;
+            height: 100px;
+            bottom: 91px;
+        }
+        .exteriors {
+            margin-left: 16px;
+            width: 60px;
+            height: 61px;
+            margin-top: 4px;
+        }
+        .e {
+            margin-left: -13px;
+            font-size: 11px;
+        }
+        .img-fluid {
+            margin-top: 9px;
+        }
+        .footer_2 {
+            margin-top: -33px;
+        }
+        .gallery-int {
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 475px) and (min-width: 425px) {
+        /* html,
+        body {
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        } */
+        .ext_1 {
+            width: 127px;
+            height: 100px;
+            left: -1px;
+        }
+        .pergolas {
+            margin-left: 14px;
+            width: 64px;
+            margin-top: 3px;
+            height:67px;
+        }
+        .p {
+            margin-left: -8px;
+            font-size: 9px;
+        }
+        .ext_2 {
+            width: 127px;
+            height: 100px;
+            left: 10px;
+            top: -1px;
+        }
+        .cladding {
+            margin-left: 14px;
+            width: 55px;
+            height: 57px;
+            margin-top: 12px;
+        }
+        .d {
+            margin-left: -8px;
+            font-size: 9px;
+        }
+        .ext_3 {
+            left: 21px;
+            width: 127px;
+            height: 100px;
+            top: -1px;
+        }
+        .garden {
+            margin-left: 6px;
+            width: 75px;
+            height: 62px;
+            margin-top: 3px;
+        }
+        .t {
+            margin-left: 9px;
+            font-size: 9px;
+        }
+        .ext_4 {
+            width: 127px;
+            height: 100px;
+            left: -1px;
+            top: 21px;
+        }
+        .outdoor {
+            margin-left: 17px;
+            height: 58px;
+            margin-top: 7px;
+            width: 60px;
+        }
+        .o {
+            margin-left: 9px;
+            position: relative;
+            bottom: -4px;
+            font-size: 10px;
+        }
+        .ext_5 {
+            left: 10px;
+            width: 127px;
+            height: 100px;
+            top: 21px;
+        }
+        .fireplace {
+            margin-left: 13px;
+            width: 60px;
+            height: 60px;
+            margin-top: 9px;
+        }
+        .f {
+            margin-left: 15px;
+            font-size: 10px;
+        }
+        .ext_6 {
+            left: 275px;
+            width: 127px;
+            height: 100px;
+            top: -119px;
+        }
+        .vertical {
+            margin-left: 13px;
+            height: 55px;
+            margin-top: 13px;
+            width: 57px;
+        }
+        .v {
+            margin-left: 1px;
+            font-size: 10px;
+        }
+        .ext_7 {
+            width: 127px;
+            left: -128px;
+            height: 100px;
+            top: 8px;
+        }
+        .water {
+            margin-left: 7px;
+            width: 60px;
+            height: 58px;
+            margin-top: 9px;
+        }
+        .w {
+            margin-left: 1px;
+            font-size: 10px;
+        }
+        .ext_8 {
+            width: 127px;
+            left: -116px;
+            height: 100px;
+            bottom: -8px;
+        }
+        .bar {
+            margin-left: 15px;
+            width: 54px;
+            height: 44px;
+            margin-top: 20px;
+        }
+        .b {
+            position: relative;
+            top: 5px;
+            left: 11px;
+            font-size: 10px;
+        }
+        .ext_9 {
+            width: 127px;
+            left: 274px;
+            height: 100px;
+            bottom: 92px;
+        }
+        .exteriors {
+            margin-left: 11px;
+            width: 60px;
+            height: 61px;
+            margin-top: 7px;
+        }
+        .e {
+            margin-left: -14px;
+            font-size: 10px;
+        }
+        .img-fluid {
+            margin-top: 9px;
+        }
+        .footer_2 {
+            margin-top: -35px;
+        }
+        .gallery-int {
+            position: relative;
+            left: 0px;
+            top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 425px) and (min-width: 381px) {
+        .ext_1 {
+            width: 342px;
+            height: 107px;
+            left: 4px;
+            bottom: 6px;
+        }
+        .pergolas {
+            margin-left: 113px;
+            width: 76px;
+            margin-top: 3px;
+        }
+        .p {
+            margin-left: 79px;
+            font-size: 14px;
+        }
+        .ext_2 {
+            width: 342px;
+            height: 107px;
+            left: 4px;
+            top: 13px;
+        }
+        .cladding {
+            margin-left: 113px;
+            width: 78px;
+        }
+        .d {
+            margin-left: 78px;
+            font-size: 14px;
+        }
+        .ext_3 {
+            left: 3px;
+            width: 342px;
+            height: 107px;
+            top: 33px;
+        }
+        .garden {
+            margin-left: 119px;
+            width: 65px;
+            margin-top: 9px;
+        }
+        .t {
+            margin-left: 96px;
+        }
+        .ext_4 {
+            width: 342px;
+            height: 107px;
+            left: 3px;
+            top: 56px;
+        }
+        .outdoor {
+            margin-left: 112px;
+            margin-top: 5px;
+            width: 80px;
+            height: 65px;
+        }
+        .o {
+            margin-left: 99px;
+            font-size: 14px;
+        }
+        .ext_5 {
+            left: 3px;
+            width: 342px;
+            height: 107px;
+            top: 80px;
+        }
+        .fireplace {
+            margin-left: 111px;
+            width: 75px;
+            margin-top: 4px;
+        }
+        .f {
+            margin-left: 114px;
+            font-size: 14px;
+        }
+        .ext_6 {
+            width: 342px;
+            top: 65px;
+            left: 3px;
+            height: 107px;
+        }
+        .vertical {
+            margin-left: 112px;
+            height: 68px;
+            margin-top: 9px;
+            width: 72px;
+        }
+        .v {
+            margin-left: 90px;
+            font-size: 14px;
+        }
+        .ext_7 {
+            width: 342px;
+            height: 107px;
+            left: 3px;
+            top: 93px;
+        }
+        .water {
+            margin-left: 100px;
+            width: 85px;
+            height: 74px;
+            margin-top: 6px;
+        }
+        .w {
+            margin-left: 91px;
+            font-size: 14px;
+        }
+        .ext_8 {
+            width: 342px;
+            height: 107px;
+            left: 2px;
+            top: 121px;
+        }
+        .bar {
+            margin-left: 110px;
+            width: 74px;
+            height: 57px;
+            margin-top: 12px;
+        }
+        .b {
+            left: 104px;
+            font-size: 14px;
+        }
+        .ext_9 {
+            width: 342px;
+            top: 149px;
+            left: 2px;
+        }
+        .exteriors {
+            margin-left: 100px;
+            width: 88px;
+        }
+        .e {
+            margin-left: 78px;
+            font-size: 14px;
+        }
+        .img-fluid {
+            margin-top: 9px;
+        }
+        .footer_1 {
+            margin-top: 155px;
+        }
+        .footer_2 {
+            margin-top: -33px;
+        }
+        .gallery-int {
+            left: 0px;
+            top: 0px;
+        }
+    }
+    
+    @media screen and (max-width: 380px) and (min-width: 320px) {
+        .ext_1 {
+            width: 285px;
+            height: 107px;
+            left: 4px;
+            bottom: 6px;
+        }
+        .pergolas {
+            margin-left: 92px;
+            width: 76px;
+            margin-top: 5px;
+        }
+        .p {
+            margin-left: 56px;
+            font-size: 14px;
+        }
+        .ext_2 {
+            width: 284px;
+            height: 107px;
+            left: 4px;
+            top: 13px;
+        }
+        .cladding {
+            margin-left: 90px;
+            width: 78px;
+        }
+        .d {
+            margin-left: 56px;
+            font-size: 14px;
+        }
+        .ext_3 {
+            left: 3px;
+            width: 285px;
+            height: 107px;
+            top: 33px;
+        }
+        .garden {
+            margin-left: 91px;
+            width: 65px;
+            margin-top: 6px;
+        }
+        .t {
+            margin-left: 72px;
+        }
+        .ext_4 {
+            width: 283px;
+            height: 107px;
+            left: 3px;
+            top: 56px;
+        }
+        .outdoor {
+            margin-left: 87px;
+            margin-top: 5px;
+            width: 80px;
+            height: 65px;
+        }
+        .o {
+            margin-left: 70px;
+            font-size: 14px;
+        }
+        .ext_5 {
+            left: 3px;
+            width: 284px;
+            height: 107px;
+            top: 80px;
+        }
+        .fireplace {
+            margin-left: 83px;
+            width: 75px;
+            margin-top: 5px;
+        }
+        .f {
+            margin-left: 85px;
+            font-size: 14px;
+        }
+        .ext_6 {
+            width: 285px;
+            top: 65px;
+            left: 3px;
+            height: 107px;
+        }
+        .vertical {
+            margin-left: 88px;
+            height: 68px;
+            margin-top: 9px;
+            width: 72px;
+        }
+        .v {
+            margin-left: 70px;
+            font-size: 14px;
+        }
+        .ext_7 {
+            width: 284px;
+            height: 107px;
+            left: 3px;
+            top: 93px;
+        }
+        .water {
+            margin-left: 75px;
+            width: 85px;
+            height: 74px;
+            margin-top: 6px;
+        }
+        .w {
+            margin-left: 68px;
+            font-size: 14px;
+        }
+        .ext_8 {
+            width: 288px;
+            height: 107px;
+            left: 2px;
+            top: 121px;
+        }
+        .bar {
+            margin-left: 86px;
+            width: 74px;
+            height: 57px;
+            margin-top: 12px;
+        }
+        .b {
+            left: 82px;
+            font-size: 14px;
+        }
+        .ext_9 {
+            width: 289px;
+            top: 149px;
+            left: 2px;
+        }
+        .exteriors {
+            margin-left: 78px;
+            width: 88px;
+        }
+        .e {
+            margin-left: 56px;
+            font-size: 14px;
+        }
+        .img-fluid {
+            margin-top: 9px;
+        }
+        .footer_1 {
+            margin-top: 190px;
+        }
+        .footer_2 {
+            margin-top: -29px;
+        }
+        .gallery-int {
+            left: 0px;
+            top: 0px;
+        }
+    }
+    /*--------------------------------------------------------------
+# Services
+--------------------------------------------------------------*/
+    
+    .services .icon-box {
+        text-align: center;
+        padding: 70px 20px 80px 20px;
+        transition: all ease-in-out 0.3s;
+        background: #fff;
+        box-shadow: 0px 5px 90px 0px rgba(110, 123, 131, 0.1);
+    }
+    
+    .services .icon-box .icon {
+        margin: 0 auto;
+        width: 100px;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: ease-in-out 0.3s;
+        position: relative;
+    }
+    
+    .services .icon-box .icon i {
+        font-size: 36px;
+        transition: 0.5s;
+        position: relative;
+    }
+    
+    .services .icon-box .icon svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+    .services .icon-box .icon svg path {
+        transition: 0.5s;
+        fill: #f5f5f5;
+    }
+    
+    .services .icon-box h4 {
+        font-weight: 600;
+        margin: 10px 0 15px 0;
+        font-size: 22px;
+    }
+    
+    .services .icon-box h4 a {
+        color: #222222;
+        transition: ease-in-out 0.3s;
+    }
+    
+    .services .icon-box p {
+        line-height: 24px;
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+    
+    .services .icon-box:hover {
+        border-color: #fff;
+        box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
+    }
+    
+    .services .iconbox-blue i {
+        color: #47aeff;
+    }
+    
+    .services .iconbox-blue:hover .icon i {
+        color: #fff;
+    }
+    
+    .services .iconbox-blue:hover .icon path {
+        fill: #47aeff;
+    }
+    
+    .services .iconbox-orange i {
+        color: #ffa76e;
+    }
+    
+    .services .iconbox-orange:hover .icon i {
+        color: #fff;
+    }
+    
+    .services .iconbox-orange:hover .icon path {
+        fill: #ffa76e;
+    }
+    
+    .services .iconbox-pink i {
+        color: #e80368;
+    }
+    
+    .services .iconbox-pink:hover .icon i {
+        color: #fff;
+    }
+    
+    .services .iconbox-pink:hover .icon path {
+        fill: #e80368;
+    }
+    
+    .services .iconbox-yellow i {
+        color: #ffbb2c;
+    }
+    
+    .services .iconbox-yellow:hover .icon i {
+        color: #fff;
+    }
+    
+    .services .iconbox-yellow:hover .icon path {
+        fill: #ffbb2c;
+    }
+    
+    .services .iconbox-red i {
+        color: #ff5828;
+    }
+    
+    .services .iconbox-red:hover .icon i {
+        color: #fff;
+    }
+    
+    .services .iconbox-red:hover .icon path {
+        fill: #ff5828;
+    }
+    
+    .services .iconbox-teal i {
+        color: #11dbcf;
+    }
+    
+    .services .iconbox-teal:hover .icon i {
+        color: #fff;
+    }
+    
+    .services .iconbox-teal:hover .icon path {
+        fill: #11dbcf;
+    }
+    
+    .text-uppercase {
+        color: #000;
+    }
+    
+    .text-reset a:hover {
+        color: #ba953a;;
+    }
+    /*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+    
+    .contact .info {
+        border-top: 3px solid #5cb874;
+        border-bottom: 3px solid #5cb874;
+        padding: 30px;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    .contact .info i {
+        font-size: 20px;
+        color: #5cb874;
+        float: left;
+        width: 44px;
+        height: 44px;
+        background: #eaf6ed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        transition: all 0.3s ease-in-out;
+    }
+    
+    .contact .info h4 {
+        padding: 0 0 0 60px;
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 5px;
+        color: #222222;
+    }
+    
+    .contact .info p {
+        padding: 0 0 10px 60px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        color: #555555;
+    }
+    
+    .contact .info .social-links {
+        padding-left: 60px;
+    }
+    
+    .contact .info .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #333;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+        margin-right: 10px;
+    }
+    
+    .contact .info .social-links a:hover {
+        background: #5cb874;
+        color: #fff;
+    }
+    
+    .contact .info .email:hover i,
+    .contact .info .address:hover i,
+    .contact .info .phone:hover i {
+        background: #5cb874;
+        color: #fff;
+    }
+    
+    .contact .php-email-form {
+        width: 100%;
+        border-top: 3px solid #14db48;
+        border-bottom: 3px solid #14db48;
+        padding: 30px;
+        background: #fff;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    }
+    
+    .contact .php-email-form .form-group {
+        padding-bottom: 8px;
+    }
+    
+    .contact .php-email-form .error-message {
+        display: none;
+        color: #fff;
+        background: #ed3c0d;
+        text-align: left;
+        padding: 15px;
+        font-weight: 600;
+    }
+    
+    .contact .php-email-form .error-message br+br {
+        margin-top: 25px;
+    }
+    
+    .contact .php-email-form .sent-message {
+        display: none;
+        color: #fff;
+        background: #18d26e;
+        text-align: center;
+        padding: 15px;
+        font-weight: 600;
+    }
+    
+    .contact .php-email-form .loading {
+        display: none;
+        background: #fff;
+        text-align: center;
+        padding: 15px;
+    }
+    
+    .contact .php-email-form .loading:before {
+        content: "";
+        display: inline-block;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        margin: 0 10px -6px 0;
+        border: 3px solid #18d26e;
+        border-top-color: #eee;
+        -webkit-animation: animate-loading 1s linear infinite;
+        animation: animate-loading 1s linear infinite;
+    }
+    
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+        border-radius: 0;
+        box-shadow: none;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+    
+    .contact .php-email-form input:focus,
+    .contact .php-email-form textarea:focus {
+        border-color: #14db48;
+    }
+    
+    .contact .php-email-form input {
+        height: 44px;
+    }
+    
+    .contact .php-email-form textarea {
+        padding: 10px 12px;
+    }
+    
+    .contact .php-email-form button[type="submit"] {
+        background: #14db48;
+        border: 0;
+        padding: 10px 24px;
+        color: #fff;
+        transition: 0.4s;
+        border-radius: 4px;
+    }
+    
+    .contact .php-email-form button[type="submit"]:hover {
+        background: #6ec083;
+    }
+    
+    @-webkit-keyframes animate-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes animate-loading {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+    
+    .breadcrumbs {
+        padding: 15px 0;
+        background: #fbfbfb;
+        min-height: 40px;
+    }
+    
+    @media (max-width: 992px) {
+        .breadcrumbs {
+            margin-top: 66px;
+        }
+    }
+    
+    .breadcrumbs h2 {
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    .breadcrumbs ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+    
+    .breadcrumbs ol li+li {
+        padding-left: 10px;
+    }
+    
+    .breadcrumbs ol li+li::before {
+        display: inline-block;
+        padding-right: 10px;
+        color: #3c3c3c;
+        content: "/";
+    }
+    
+    @media (max-width: 768px) {
+        .breadcrumbs .d-flex {
+            display: block !important;
+        }
+        .breadcrumbs ol {
+            display: block;
+        }
+        .breadcrumbs ol li {
+            display: inline-block;
+        }
+        .b2 {
+            margin-top: 5px;
+        }
+    }
+    
+    @media(max-width:375px) {
+        .b2 {
+            margin-top: 5px;
+        }
+    }
+    /*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+    
+    #footer {
+        background: #0909091f;
+        color: #000;
+        font-size: 14px;
+        text-align: center;
+        /* padding: 30px 0; */
+    }
+    
+    .img-responsive {
+        width: 10rem;
+    }
+    
+    #footer h3 {
+        font-size: 36px;
+        font-weight: 400;
+        color: rgb(94, 85, 85);
+        position: relative;
+        font-family: "monospace", sans-serif;
+        padding: 0;
+        margin: 0 0 15px 0;
+    }
+    
+    #footer p {
+        font-size: 15;
+        font-style: none;
+        font-family: monospace; 
+        padding: 0;
+        margin: -10 0 40px 0;
+    }
+    
+    #footer .social-links {
+        margin: 0 0 40px 0;
+    }
+    
+    #footer .social-links a {
+        font-size: 18px;
+        display: inline-block;
+        background: #5cb874;
+        color: #fff;
+        line-height: 1;
+        padding: 8px 0;
+        margin-right: 4px;
+        border-radius: 50%;
+        text-align: center;
+        width: 36px;
+        height: 36px;
+        transition: 0.3s;
+    }
+    
+    #footer .social-links a:hover {
+        background: #449d5b;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    #footer .copyright {
+        margin: 0 0 5px 0;
+    }
+    
+    #footer .credits {
+        font-size: 13px;
+    }
+    
+    .copyright span {
+        color: #14db48
+    }
+    
+    .copyright strong {
+        color: rgb(30, 9, 105)
+    }
+    
+    .address h3 b {
+        color: rgb(30, 9, 105);
+    }
+    
+    .address p {
+        margin: -10px 0 40px 0;
+    }
+    
+    /* a.text-reset:hover {
+        color: #14db48!important;
+    } */
+    
+    .text-reset {
+        color: grey!important;
+        text-decoration: none;
+        font-family: monospace;
+    }
+    /* ****************************   Zoom-in and zoom-out css   ************************************************** */
+
+
+    
