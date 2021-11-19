@@ -55,7 +55,7 @@
     color: white;
     font-size: 14px;
     padding: 12px 19px;
-    font-weight: 500;
+    font-weight: 400;
   }
 
 
@@ -105,6 +105,7 @@
 --------------------------------------------------------------*/
     
 
+    
 #header {
     background: #fff;
     transition: all 0.5s;
@@ -134,7 +135,7 @@
 #header .logo img {
     max-height: 138px;
     max-width: 218px;
-    margin-top: 35px;
+    margin-top: 28px;
 }
 /* .scrolled-offset {
 margin-top: 166px;
@@ -158,7 +159,6 @@ margin-top: 166px;
     .navbar {
         padding: 0;
         padding-top: 0;
-        padding-right: 70px;
         margin-top: -19px;
         font-weight: 400;
         margin-left:74px;
@@ -299,27 +299,28 @@ margin-top: 166px;
 * Mobile Navigation 
 */
     
+.mobile-nav-toggle {
+    color: #222222;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+    color: #fff;
+}
+
+@media (max-width: 991px) {
     .mobile-nav-toggle {
-        color: #222222;
-        font-size: 28px;
-        cursor: pointer;
+        display: block;
+    }
+    .navbar ul {
         display: none;
-        line-height: 0;
-        transition: 0.5s;
     }
-    
-    .mobile-nav-toggle.bi-x {
-        color: #fff;
-    }
-    
-    @media (max-width: 991px) {
-        .mobile-nav-toggle {
-            display: block;
-        }
-        .navbar ul {
-            display: none;
-        }
-    }
+}
+
     
     .navbar-mobile {
         position: fixed;
@@ -328,7 +329,7 @@ margin-top: 166px;
         right: 0;
         left: 0;
         bottom: 0;
-        background: rgba(9, 9, 9, 0.9);
+        background: #0b4461ad;
         transition: 0.3s;
         z-index: 999;
     }
@@ -355,13 +356,13 @@ margin-top: 166px;
     .navbar-mobile a {
         padding: 10px 20px;
         font-size: 15px;
-        color: #222222;
+        color: #0b4461;
     }
     
     .navbar-mobile a:hover,
     .navbar-mobile .active,
     .navbar-mobile li:hover>a {
-        color: #ba953a;
+        color: #0b4461;
     }
     
     .navbar-mobile .getstarted {
@@ -376,7 +377,7 @@ margin-top: 166px;
         z-index: 99;
         opacity: 1;
         visibility: visible;
-        background: #fff;
+        background: #0b4461;
         box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     }
     
@@ -395,7 +396,7 @@ margin-top: 166px;
     .navbar-mobile .dropdown ul a:hover,
     .navbar-mobile .dropdown ul .active:hover,
     .navbar-mobile .dropdown ul li:hover>a {
-        color: #ba953a;
+        color: #fff;
     }
     
     .navbar-mobile .dropdown>.dropdown-active {
@@ -563,7 +564,7 @@ margin-top: 166px;
     
     #hero .carousel-indicators li.active {
         opacity: 1;
-        background: #fabd38;
+        background: #0b4461;
     }
     
     .carousel-inner img {
@@ -1061,11 +1062,11 @@ margin-top: 166px;
     
     @media screen and (max-width: 992px) and (min-width: 768px) {
         .text {
-            background-color: #a07303;
+            background-color: #0b4461;
             color: white;
             font-size: 9px;
             padding: 0px 13px;
-            font-weight: 700;
+            font-weight: 400;
         }
         .ext_1 {
             width: 130px;
@@ -1213,11 +1214,11 @@ margin-top: 166px;
     
     @media screen and (max-width: 768px) and (min-width: 576px) {
         .text {
-            background-color: #a07303;
+            background-color: #0b4461;
             color: white;
             font-size: 14px;
             padding: 12px 38px;
-            font-weight: 700;
+            font-weight: 400;
           }
         .ext_1 {
             width: 171px;
@@ -2417,7 +2418,7 @@ margin-top: 166px;
     #footer h3 {
         font-size: 20px;
         font-weight: 400;
-        color: rgb(94, 85, 85);
+        color: #fdc558;
         position: relative;
         font-family: "monospace", sans-serif;
         padding: 0;
