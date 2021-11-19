@@ -84,9 +84,9 @@
     }
     
     .breadcrumb-item a {
-        color: #121413;
+        color:#0b4461;
         text-decoration: none;
-        font-weight: 600;
+        font-weight: 300;
         font-family: monospace;
         font-size: 18px;
     }
@@ -99,14 +99,14 @@
     }
     
     .breadcrumb>.active {
-        color: #121413;
-        font-weight: 600;
+        color: #0b4461;
+        font-weight: 300;
         font-family: monospace;
         font-size: 16px;
     }
     
     .breadcrumb>.active:hover {
-        color: #ba953a;
+        color: #0b4461;
     }
     
     .navbar-fixed-top {
@@ -756,12 +756,14 @@
         margin-left: 9px;
         font-size: 18px;
         text-align: left;
-        color: #ba953a;
-        font-weight: bold;
+        color: #feb92c;
+        font-weight: 200;
     }
     
     .floor_w {
-        color: #ba953a;
+        color: #feb92c;
+        font-size: 18px;
+        font-weight: 200;
     }
     
     .text-reset_1 {
