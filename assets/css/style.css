@@ -1,20 +1,18 @@
-    html,
-    body {
-        font-family: "Serif", sans-serif;
+    html,body {
+        font-family: "Open Sans", sans-serif;
         color: #444444;
         margin: 0;
         padding: 0;
-        -webkit-overflow-scrolling: touch; 
-        overflow-x: hidden!important
+        overflow-x: hidden;
     }
     
     a {
         text-decoration: none;
-        color:#0b4461;
+        color: #FFF;
     }
     
     a:hover {
-        color: #0b4461;
+        color: #ba953a;
         text-decoration: none;
     }
     
@@ -106,105 +104,49 @@
 # Header
 --------------------------------------------------------------*/
     
-    #header {
-        background: #fff;
-        transition: all 0.5s;
-        z-index: 997;
-        height: 106px;
-        padding-top: 90px;
-    }
-    
-    #header.header-scrolled {
-        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-    }
 
-    .logo {
-        width: 400px;
-        height: 92px;
-        margin-left: -15px;
-        margin-top: -42px;
-        overflow-x: hidden;
-    }
-    .scroll {
-        min-height: 100%;
-        overflow: scroll;
-    }
-    @media screen and (max-width:1200px) and (min-width:1068px) {
-    .logo{
-        width:277px;
-        height:60px;
-        margin-top:-45px;
-        margin-left: -55px;
-        }
-    }
+#header {
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 997;
+    height: 106px;
+    padding-top: 90px;
+}
 
-    @media screen and (max-width:1068px) and (min-width:992px){
-        .logo{
-            width:235px;
-            height:62px;
-        }
-    }
+#header.header-scrolled {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
 
-    @media screen and (max-width:992px) and (min-width:768px){
-        .logo {
-            width: 436 px;
-            height: 71px;
-            margin-left: -15px;
-            margin-top: -42px;
-        }
+#header .logo {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
 
-        .mobile-nav-toggle{
-            margin-left:169px;
-        }
-    }
-    
-    @media screen and (max-width:768px) and (min-width:576px){
-        .logo{
-            width:350px;
-            height:65px;
-            margin-left:-13px;
-        }
-        .mobile-nav-toggle{
-            margin-left:100px;
-        }
+#header .logo a {
+    color: #5cb874;
+}
 
-    }
+#header .logo img {
+    max-height: 138px;
+    max-width: 218px;
+    margin-top: 35px;
+}
+/* .scrolled-offset {
+margin-top: 166px;
+} */
 
-    @media screen and (max-width:576px) and (min-width:420px){
-        .logo{
-            width:316px;
-            height:65px;
-        }
-
-        .mobile-nav-toggle{
-            margin-left:87px;
-        }
-    }
-
-    @media screen and (max-width:420px) and (min-width:376px){
-        .logo{
-            width:225px;
-            height:65px;
-        }
-
-        .mobile-nav-toggle{
-            margin-left:65px;
-        }
-
-    }
-
-    @media screen and (max-width:376px) and (min-width:320px){
-        .logo{
-            width:196px;
-            height:65px;
-            margin-left:0px;
-        }
-
-        .mobile-nav-toggle{
-            margin-left:52px;
-        }
-
-    }
+.scroll {
+    min-height: 100%;
+    overflow: scroll;
+}
+.nav-link{
+    padding: 0px;    
+}
     
     /*--------------------------------------------------------------
 # Navigation Menu
@@ -386,7 +328,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: #0b4461;
+        background: rgba(9, 9, 9, 0.9);
         transition: 0.3s;
         z-index: 999;
     }
@@ -405,7 +347,7 @@
         bottom: 15px;
         left: 15px;
         padding: 10px 0;
-        background-color:#0b4461;
+        background-color: #fff;
         overflow-y: auto;
         transition: 0.3s;
     }
@@ -413,13 +355,13 @@
     .navbar-mobile a {
         padding: 10px 20px;
         font-size: 15px;
-        color: #fff;
+        color: #222222;
     }
     
     .navbar-mobile a:hover,
     .navbar-mobile .active,
     .navbar-mobile li:hover>a {
-        color: #fff;
+        color: #ba953a;
     }
     
     .navbar-mobile .getstarted {
@@ -453,7 +395,7 @@
     .navbar-mobile .dropdown ul a:hover,
     .navbar-mobile .dropdown ul .active:hover,
     .navbar-mobile .dropdown ul li:hover>a {
-        color: #fff;
+        color: #ba953a;
     }
     
     .navbar-mobile .dropdown>.dropdown-active {
@@ -509,7 +451,7 @@
         width: 100%;
         height: 85vh;
         /* background-color: rgba(9, 9, 9, 0.8); */
-        overflow: hidden;
+        overflow-x: hidden;
         position: relative;
         top: 15px;
     }
@@ -621,7 +563,7 @@
     
     #hero .carousel-indicators li.active {
         opacity: 1;
-        background: #0b4461;
+        background: #fabd38;
     }
     
     .carousel-inner img {
@@ -724,7 +666,7 @@
         font-size: 32px;
         font-weight: 600;
         text-transform: uppercase;
-        color:#000;
+        color:#0b4461;
         margin-bottom: 20px;
         padding-bottom: 20px;
         position: relative;
@@ -2209,11 +2151,12 @@
     }
     
     .text-uppercase {
-        color: #000;
+        color: #0b4461;
+        font-family: 'Montserrat';
     }
     
     .text-reset a:hover {
-        color: #000;
+        color: #0b4461;
     }
     /*--------------------------------------------------------------
 # Contact
@@ -2472,9 +2415,9 @@
     }
     
     #footer h3 {
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 400;
-        color: #f9c34a;
+        color: rgb(94, 85, 85);
         position: relative;
         font-family: "monospace", sans-serif;
         padding: 0;
@@ -2482,7 +2425,7 @@
     }
     
     #footer p {
-        font-size: 15;
+        font-size: 15px;
         font-style: none;
         font-family: monospace; 
         padding: 0;
@@ -2543,13 +2486,9 @@
     } */
     
     .text-reset {
-        color: gray!important;
+        color: grey!important;
         text-decoration: none;
         font-family: monospace;
-    }
-
-    .text-reset_1{
-        color:#fff!important;
     }
 
     @media screen and (max-width:992px) and (min-width:768px){
