@@ -386,7 +386,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background: rgba(9, 9, 9, 0.9);
+        background: #0b4461;
         transition: 0.3s;
         z-index: 999;
     }
@@ -405,7 +405,7 @@
         bottom: 15px;
         left: 15px;
         padding: 10px 0;
-        background-color: #fff;
+        background-color:#0b4461;
         overflow-y: auto;
         transition: 0.3s;
     }
@@ -413,13 +413,13 @@
     .navbar-mobile a {
         padding: 10px 20px;
         font-size: 15px;
-        color: #222222;
+        color: #fff;
     }
     
     .navbar-mobile a:hover,
     .navbar-mobile .active,
     .navbar-mobile li:hover>a {
-        color: #ba953a;
+        color: #fff;
     }
     
     .navbar-mobile .getstarted {
@@ -453,7 +453,7 @@
     .navbar-mobile .dropdown ul a:hover,
     .navbar-mobile .dropdown ul .active:hover,
     .navbar-mobile .dropdown ul li:hover>a {
-        color: #ba953a;
+        color: #fff;
     }
     
     .navbar-mobile .dropdown>.dropdown-active {
