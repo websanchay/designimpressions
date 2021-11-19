@@ -12,7 +12,7 @@
     }
     
     a:hover {
-        color: #ba953a;
+        color: #fff;
         text-decoration: none;
     }
     
@@ -2429,6 +2429,7 @@ margin-top: 166px;
         font-size: 15px;
         font-style: none;
         font-family: monospace; 
+        font-weight: 300;
         padding: 0;
         margin: -10 0 40px 0;
     }

@@ -72,7 +72,7 @@
         padding: 8px 15px;
         list-style: none;
         border-radius: 4px;
-        font-size: 17px;
+        font-size: 18px;
         position: absolute;
         top: 54px;
         left: 833px;
@@ -106,7 +106,8 @@
         color: #0b4461;
         font-weight: 300;
         font-family: monospace;
-        font-size: 16px;
+        font-size: 14px;
+        margin-top:4px;
     }
     
     .breadcrumb>.active:hover {
@@ -156,12 +157,15 @@
     
     .pergolas_c {
         margin-left: 30px;
-        color: #ba953a;
+        color: #febe38;
+        font-size: 15px;
+        font-weight: 200;
     }
     
     .pergolas_w {
-        color: #ba953a;
-        font-size: 14px;
+        color: #febe38;
+        font-size: 15px;
+        font-weight: 200;
     }
     
     @media screen and (max-width:1496px) and (min-width:1200px) {
@@ -474,9 +478,10 @@
     }
     
     .decking_w {
-        color: #ba953a;
-        font-size: 18px;
+        color: #fac652;
+        font-size: 15px;
         /* margin-left: 85px; */
+        font-weight: 300;
     }
     
     .floor-section {
@@ -759,7 +764,7 @@
     
     .floor_f {
         margin-left: 9px;
-        font-size: 18px;
+        font-size: 15px;
         text-align: left;
         color: #feb92c;
         font-weight: 200;
@@ -767,7 +772,7 @@
     
     .floor_w {
         color: #feb92c;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 200;
     }
     
