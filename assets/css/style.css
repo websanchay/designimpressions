@@ -2525,7 +2525,25 @@ margin-top: 166px;
             margin-left: -50px;
         }
     }
-    /* ****************************   Zoom-in and zoom-out css   ************************************************** */
+    /* ****************************   Whatsapp css   ************************************************** */
+
+    .whatsapp{
+        position:fixed;
+        left:10px;
+        bottom:10px;
+        width: 60px;
+        height:60px;
+    }
+    .whatsapp_image{
+        width:60px;
+        height: 60px;
+    }
+   
+
+    .p-4 {
+        padding: 1.5rem!important;
+        font-family: 'Roboto Condensed';
+    }
 
 
     
